@@ -8,6 +8,7 @@ It is based on [vincent's code](https://code.google.com/p/rcon-client/).
 Example
 -------
 
+```scala
     val rcon = new RCon()
 
     // Parameters are host name, port and password
@@ -21,7 +22,8 @@ Example
     println("As a reply to /seed we received: \"" + returnedSeedMessage + "\".")
 
     // When we're done we should close the connection.
-    rcon.close()`
+    rcon.close()
+```
 
 What can be seen on a server console:
 
@@ -29,7 +31,8 @@ What can be seen on a server console:
     2014-05-24 21:09:43 [INFO] [Rcon] Hello!
 
 Enabling RCon on Minecraft server
------------------------
+---------------------------------
+
 RCon have to be allow in `server.properties` like this:
 
     enable-rcon=true
@@ -41,3 +44,7 @@ If you want to password:
 And a custom port:
 
     rcon.port=25575
+
+Donation
+--------
+If you like this library, please consider a small donation - [my PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=U6PGB7P24WWSU&lc=CZ&item_name=monnef%20%2d%20McRConLib&item_number=10&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted).
