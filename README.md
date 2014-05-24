@@ -9,20 +9,20 @@ Example
 -------
 
 ```scala
-    val rcon = new RCon()
+val rcon = new RCon()
 
-    // Parameters are host name, port and password
-    rcon.connect("localhost", RCon.DEFAULT_PORT, "xxx")
+// Parameters are host name, port and password
+rcon.connect("localhost", RCon.DEFAULT_PORT, "xxx")
 
-    // Now we can send a command
-    rcon.send("say Hello!")
+// Now we can send a command
+rcon.send("say Hello!")
 
-    // And we can also use its return value
-    val returnedSeedMessage = rcon.send("seed")
-    println("As a reply to /seed we received: \"" + returnedSeedMessage + "\".")
+// And we can also use its return value
+val returnedSeedMessage = rcon.send("seed")
+println("As a reply to /seed we received: \"" + returnedSeedMessage + "\".")
 
-    // When we're done we should close the connection.
-    rcon.close()
+// When we're done we should close the connection.
+rcon.close()
 ```
 
 What can be seen on a server console:
@@ -52,6 +52,7 @@ If you like this library, please consider a small donation - [my PayPal](https:/
 License
 -------
 McRConLib: Library for accessing Minecraft server via RCon
+
 Copyright (C) 2014  monnef
 
 This program is free software: you can redistribute it and/or modify
